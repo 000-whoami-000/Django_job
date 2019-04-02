@@ -1,0 +1,15 @@
+
+
+{% load static %}
+{% block content %}
+	{% for p in posts %}
+		<div>
+				<h2>
+					{{ p.title }}
+				</h2>
+				<span>{{p.pub_date}}</span>
+				<p>{{p.body}}</p>
+			</a>			
+		</div>
+	{% endfor %}
+{% endblock %}	
